@@ -1,2 +1,2 @@
 # itsdarkflare.github.io
-A website
+A website created for mostly fun and to honor oog.
