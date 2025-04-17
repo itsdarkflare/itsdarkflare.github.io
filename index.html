@@ -168,18 +168,25 @@
     <p>See the website <a href="https://github.com/oogisgod/oogisgod.github.io" target="_blank" style="color: #82d1ff;">source code</a> by clicking here.</p>
     <p>Join the <a href="https://discord.gg/yDpdNUWVuy" target="_blank" style="color: #82d1ff;">discord server</a></p>
   </footer>
-  <script>
-  window.onscroll = function() {
-    // Check if the user has scrolled 80% down the page
-    if (document.documentElement.scrollTop + window.innerHeight >= document.documentElement.scrollHeight * 0.8) {
-      document.getElementById('footer').style.opacity = '1'; // Fade in the footer
-      document.getElementById('footer').style.visibility = 'visible'; // Make sure it's visible
-    } else {
-      document.getElementById('footer').style.opacity = '0'; // Fade out
-      document.getElementById('footer').style.visibility = 'hidden'; // Hide the footer completely
-    }
-  };
-</script>
+    <script>
+    window.onscroll = function() {
+      // Check if the user has scrolled 80% down the page
+      if (document.documentElement.scrollTop + window.innerHeight >= document.documentElement.scrollHeight * 0.8) {
+        var footer = document.getElementById('footer');
+        footer.style.opacity = '1'; // Fade in the footer
+        footer.style.visibility = 'visible'; // Make sure it's visible
+      } else {
+        var footer = document.getElementById('footer');
+        footer.style.opacity = '0'; // Fade out
+        footer.style.visibility = 'hidden'; // Hide the footer completely
+      }
+    };
+
+    // Optional: Make sure the footer is hidden initially (for a smoother transition)
+    document.getElementById('footer').style.visibility = 'hidden';
+    document.getElementById('footer').style.opacity = '0';
+  </script>
+
 
   
 </body>
